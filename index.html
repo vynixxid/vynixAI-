@@ -1,9 +1,9 @@
-<!-- index.html (HOME) --><!DOCTYPE html><html lang="id">
+<!-- 1. index.html --><!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VYNIX – Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYNIX - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -15,34 +15,39 @@
       <a href="nonton.html">Nonton</a>
       <a href="profil.html">Profil</a>
       <a href="pengaturan.html">Pengaturan</a>
+      <a href="donasi.html">Donasi</a>
     </nav>
   </header>  <main>
     <section class="hero">
-      <h2>🔥 Film Trending Hari Ini</h2>
-      <div class="film-trending">[Poster Film Besar]</div>
-    </section><section class="genre-scroll">
+      <h2>Trending Film AI Minggu Ini</h2>
+      <div class="trending">
+        <!-- Gambar/poster film besar -->
+      </div>
+    </section><section class="genre">
   <h3>Genre</h3>
-  <div class="genre-list">
-    <a href="#">Action</a>
-    <a href="#">Sci-Fi</a>
-    <a href="#">Drama</a>
-    <a href="#">Horror</a>
-    <a href="#">AI Film</a>
+  <div class="genre-scroll">
+    <a href="genre.html">Aksi</a>
+    <a href="genre.html">Drama</a>
+    <a href="genre.html">Fantasi</a>
+    <a href="genre.html">Horor</a>
+    <!-- Tambah genre lain -->
   </div>
 </section>
 
-<section class="film-list">
-  <h3>Film Lainnya</h3>
-  <div class="film-card">[Film]</div>
-  <div class="film-card">[Film]</div>
+<section class="lainnya">
+  <h3>Rekomendasi Lainnya</h3>
+  <!-- Film kecil di bawah -->
 </section>
 
   </main>  <footer>
-    <a href="donasi.html">💸 Donasi</a>
-    <a href="search.html">🔍 Pencarian</a>
-    <a href="tentang.html">ℹ️ Tentang VYNIX</a>
-    <a href="download.html">⬇️ Download</a>
-    <a href="langganan.html">⭐ Langganan</a>
-  </footer>
-</body>
-</html><!-- Buat file lain seperti favorit.html, notifikasi.html, dll dengan struktur sama -->
+    <div class="footer-menu">
+      <a href="donasi.html">Donasi</a>
+      <a href="tentang.html">Tentang VYNIX</a>
+      <a href="download.html">Download</a>
+      <a href="langganan.html">Langganan</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Cari film...">
+    </div>
+  </footer>  <script src="main.js"></script></body>
+</html>
