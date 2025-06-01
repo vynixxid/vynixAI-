@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pengaturan - VYNIX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html" class="logo">VYNIX</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="favorit.html">Favorit</a></li>
+        <li><a href="notifikasi.html">Notifikasi</a></li>
+        <li><a href="nonton.html">Nonton</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="pengaturan.html" class="active">Pengaturan</a></li>
+        <li><a href="#" onclick="window.close()">✖</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="settings-section">
+      <h1 class="section-title">Pengaturan</h1>
+
+      <div class="setting-item">
+        <label for="darkMode">🌙 Tema Gelap</label>
+        <input type="checkbox" id="darkMode" onclick="toggleDarkMode()"/>
+      </div>
+
+      <div class="setting-item">
+        <label for="bahasa">🌐 Bahasa</label>
+        <select id="bahasa">
+          <option value="id">Indonesia</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+
+      <div class="setting-item">
+        <label for="quality">🎥 Kualitas Video</label>
+        <select id="quality">
+          <option>Auto</option>
+          <option>1080p</option>
+          <option>720p</option>
+          <option>480p</option>
+        </select>
+      </div>
+
+      <button class="btn-futuristic">Simpan Pengaturan</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="donasi.html">Donasi</a>
+      <a href="tentang.html">Tentang VYNIX</a>
+      <a href="download.html">Download</a>
+      <a href="langganan.html">Langganan</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
