@@ -1,28 +1,107 @@
-<!-- 1. index.html --><!DOCTYPE html><html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VYNIX - Home</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background: #111;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-menu a {
+      margin: 0 0.5em;
+      text-decoration: none;
+      color: #ddd;
+      font-weight: bold;
+    }
+    .nav-menu a:hover {
+      color: #fff;
+    }
+    main {
+      padding: 2em 1em;
+    }
+    .hero {
+      margin-bottom: 2em;
+    }
+    .trending {
+      height: 200px;
+      background: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+    .genre-scroll {
+      display: flex;
+      overflow-x: auto;
+      padding: 1em 0;
+      gap: 1em;
+    }
+    .genre-scroll a {
+      background: #333;
+      padding: 0.5em 1em;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #fff;
+      white-space: nowrap;
+    }
+    .lainnya {
+      margin-top: 2em;
+    }
+    footer {
+      background: #111;
+      padding: 2em 1em;
+      margin-top: 3em;
+    }
+    .footer-menu, .search-box {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin-bottom: 1em;
+    }
+    .footer-menu a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    .search-box input {
+      padding: 0.5em;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>VYNIX</h1>
     <nav class="nav-menu">
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="favorit.html">Favorit</a>
-  <a href="notifikasi.html">Notifikasi</a>
-  <a href="nonton.html">Nonton</a>
-  <a href="profil.html">Profil</a>
-  <a href="pengaturan.html">Pengaturan</a>
-  <a href="donasi.html">Donasi</a>
-</nav>
+      <a href="index.html">Home</a>
+      <a href="favorit.html">Favorit</a>
+      <a href="notifikasi.html">Notifikasi</a>
+      <a href="nonton.html">Nonton</a>
+      <a href="profil.html">Profil</a>
+      <a href="pengaturan.html">Pengaturan</a>
+      <a href="donasi.html">Donasi</a>
+    </nav>
   </header>  <main>
     <section class="hero">
       <h2>Trending Film AI Minggu Ini</h2>
       <div class="trending">
         <!-- Gambar/poster film besar -->
+        <p>Poster Film Trending</p>
       </div>
     </section><section class="genre">
   <h3>Genre</h3>
@@ -38,6 +117,9 @@
 <section class="lainnya">
   <h3>Rekomendasi Lainnya</h3>
   <!-- Film kecil di bawah -->
+  <div class="trending">
+    <p>Film Lainnya</p>
+  </div>
 </section>
 
   </main>  <footer>
