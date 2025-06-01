@@ -1,145 +1,48 @@
 /* style.css */
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #0f0f0f;
-  color: #fff;
-  font-family: 'Segoe UI', sans-serif;
-}
+body { margin: 0; padding: 0; background-color: #0f0f0f; color: #fff; font-family: 'Segoe UI', sans-serif; }
 
-header {
-  background-color: #111;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #333;
-}
+header { background-color: #111; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; flex-wrap: wrap; }
 
-.logo {
-  font-size: 1.5rem;
-  color: #00ffe5;
-  font-weight: bold;
-  text-decoration: none;
-}
+h1 { color: #00ffe5; font-size: 1.8rem; }
 
-.nav-bar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-}
+.nav-menu { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; }
 
-.nav-bar .nav-links li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+.nav-menu a { color: #ccc; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 5px; transition: background 0.3s, color 0.3s; }
 
-.nav-bar .nav-links li a:hover,
-.nav-bar .nav-links li a.active {
-  color: #00ffe5;
-}
+.nav-menu a:hover, .nav-menu a.active { background-color: #00ffe5; color: #000; }
 
-main {
-  padding: 2rem;
-}
+main { padding: 2rem; }
 
-.section-title {
-  font-size: 2rem;
-  color: #00ffe5;
-  margin-bottom: 1rem;
-}
+.hero h2, .genre h3, .lainnya h3 { font-size: 1.5rem; color: #00ffe5; margin-bottom: 1rem; }
 
-.description {
-  color: #aaa;
-  margin-bottom: 2rem;
-}
+.trending { background-color: #1a1a1a; height: 200px; border-radius: 12px; margin-bottom: 2rem; }
 
-.genre-section,
-.trending-section,
-.footer-links {
-  margin-top: 2rem;
-}
+.genre-scroll { display: flex; overflow-x: auto; gap: 1rem; padding-bottom: 1rem; }
 
-.genre-scroll {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-}
+.genre-scroll a { background-color: #222; padding: 0.5rem 1rem; color: #fff; border-radius: 20px; white-space: nowrap; text-decoration: none; transition: background 0.3s; }
 
-.genre-scroll a {
-  background-color: #222;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  border-radius: 20px;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: background 0.3s;
-}
+.genre-scroll a:hover { background-color: #00ffe5; color: #000; }
 
-.genre-scroll a:hover {
-  background-color: #00ffe5;
-  color: #000;
-}
+.lainnya { display: flex; overflow-x: auto; gap: 1rem; padding-top: 1rem; }
 
-.film-thumbnail {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  object-fit: cover;
-}
+.lainnya .film { min-width: 140px; background: #1b1b1b; border-radius: 10px; overflow: hidden; }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem;
-  background-color: #111;
-  border-top: 1px solid #333;
-}
+.lainnya .film img { width: 100%; display: block; border-bottom: 1px solid #333; }
 
-.footer-links a {
-  color: #aaa;
-  text-decoration: none;
-}
+.lainnya .film-title { padding: 0.5rem; font-size: 0.9rem; text-align: center; }
 
-.footer-links a:hover {
-  color: #00ffe5;
-}
+footer { background-color: #111; padding: 2rem 1rem; border-top: 1px solid #333; }
 
-.pricing-box {
-  background: #1b1b1b;
-  border: 1px solid #333;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-}
+.footer-menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2rem; margin-bottom: 1rem; }
 
-.benefits {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
+.footer-menu a { color: #aaa; text-decoration: none; transition: color 0.3s; }
 
-.benefits li {
-  margin: 0.5rem 0;
-}
+.footer-menu a:hover { color: #00ffe5; }
 
-.subscribe-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #00ffe5;
-  color: #000;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1rem;
-  transition: background 0.3s;
-}
+.search-box { text-align: center; }
 
-.subscribe-btn:hover {
-  background-color: #00cfc0;
-}
+.search-box input { width: 80%; max-width: 500px; padding: 0.7rem; border-radius: 8px; border: none; background-color: #1a1a1a; color: #fff; outline: none; margin-bottom: 1rem; }
+
+/* Responsif dasar */ @media (max-width: 768px) { .nav-menu { flex-direction: column; align-items: flex-start; } .lainnya { overflow-x: scroll; } }
+
