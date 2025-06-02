@@ -1,59 +1,63 @@
+<!-- 1. index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VYNIX</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYNIX - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>VYNIX</h1>
-        <nav>
-            <button class="nav-btn">Home</button>
-            <button class="nav-btn">Favorit</button>
-            <button class="nav-btn">Notifikasi</button>
-            <button class="nav-btn">Nonton</button>
-            <button class="nav-btn">Profil</button>
-        </nav>
-    </header>
+  <header>
+    <h1>VYNIX</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="favorit.html">Favorit</a>
+      <a href="notifikasi.html">Notifikasi</a>
+      <a href="nonton.html">Nonton</a>
+      <a href="profil.html">Profil</a>
+      <a href="pengaturan.html">Pengaturan</a>
+      <a href="donasi.html">Donasi</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <img src="poster-gede.jpg" alt="Poster Film Besar" class="hero-poster">
-            <div class="hero-content">
-                <h2>Trending Film AI Minggu Ini</h2>
-                <h3>Judul Film Besar</h3>
-                <button class="watch-now">WATCH NOW</button>
-            </div>
-        </section>
+  <main>
+    <section class="hero">
+      <h2>Trending Film AI Minggu Ini</h2>
+      <div class="trending">
+        <!-- Gambar/poster film besar -->
+      </div>
+    </section>
 
-        <section class="genres">
-            <h3>Genre</h3>
-            <div class="genre-buttons">
-                <button class="genre-btn">Aksi</button>
-                <button class="genre-btn">Drama</button>
-                <button class="genre-btn">Fantasi</button>
-                <button class="genre-btn">Horror</button>
-            </div>
-        </section>
+    <section class="genre">
+      <h3>Genre</h3>
+      <div class="genre-scroll">
+        <a href="genre.html">Aksi</a>
+        <a href="genre.html">Drama</a>
+        <a href="genre.html">Fantasi</a>
+        <a href="genre.html">Horor</a>
+        <!-- Tambah genre lain -->
+      </div>
+    </section>
 
-        <section class="movies">
-            <h3>Rekomendasi Lainnya</h3>
-            <div class="movie-list">
-                <div class="movie-card"><img src="poster-1.jpg" alt="Film 1"></div>
-                <div class="movie-card"><img src="poster-2.jpg" alt="Film 2"></div>
-                <div class="movie-card"><img src="poster-3.jpg" alt="Film 3"></div>
-                <div class="movie-card"><img src="poster-4.jpg" alt="Film 4"></div>
-            </div>
-        </section>
-    </main>
+    <section class="lainnya">
+      <h3>Rekomendasi Lainnya</h3>
+      <!-- Film kecil di bawah -->
+    </section>
+  </main>
 
-    <footer>
-        <button class="footer-btn">Donasi</button>
-        <button class="footer-btn">Tentang VYNIX</button>
-        <button class="footer-btn">Download</button>
-        <button class="footer-btn">Langganan</button>
-    </footer>
+  <footer>
+    <div class="footer-menu">
+      <a href="donasi.html">Donasi</a>
+      <a href="tentang.html">Tentang VYNIX</a>
+      <a href="download.html">Download</a>
+      <a href="langganan.html">Langganan</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Cari film...">
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
