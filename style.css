@@ -1,145 +1,73 @@
-/* style.css */
 
 body {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0f0f0f;
-  color: #fff;
-  font-family: 'Segoe UI', sans-serif;
 }
 
-header {
-  background-color: #111;
-  padding: 1rem 2rem;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #333;
+  background-color: #111;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
-.logo {
-  font-size: 1.5rem;
-  color: #00ffe5;
-  font-weight: bold;
+.navbar h1 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.navbar nav a {
+  color: #00ffff;
   text-decoration: none;
+  margin-left: 1rem;
 }
 
-.nav-bar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-}
-
-.nav-bar .nav-links li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-bar .nav-links li a:hover,
-.nav-bar .nav-links li a.active {
-  color: #00ffe5;
-}
-
-main {
-  padding: 2rem;
-}
-
-.section-title {
-  font-size: 2rem;
-  color: #00ffe5;
-  margin-bottom: 1rem;
-}
-
-.description {
-  color: #aaa;
-  margin-bottom: 2rem;
-}
-
-.genre-section,
-.trending-section,
-.footer-links {
-  margin-top: 2rem;
+.navbar nav a:hover {
+  text-decoration: underline;
 }
 
 .genre-scroll {
   display: flex;
   overflow-x: auto;
-  gap: 1rem;
+  padding: 1rem;
+  gap: 10px;
 }
 
-.genre-scroll a {
-  background-color: #222;
+.genre-scroll button {
+  background-color: #333;
+  color: white;
+  border: none;
   padding: 0.5rem 1rem;
-  color: #fff;
-  border-radius: 20px;
+  border-radius: 25px;
   white-space: nowrap;
-  text-decoration: none;
-  transition: background 0.3s;
 }
 
-.genre-scroll a:hover {
-  background-color: #00ffe5;
-  color: #000;
-}
-
-.film-thumbnail {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  object-fit: cover;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+footer {
+  margin-top: 3rem;
   padding: 1rem;
   background-color: #111;
-  border-top: 1px solid #333;
+  text-align: center;
 }
 
 .footer-links a {
-  color: #aaa;
+  color: #00ffff;
+  margin: 0 10px;
   text-decoration: none;
 }
 
 .footer-links a:hover {
-  color: #00ffe5;
+  text-decoration: underline;
 }
 
-.pricing-box {
-  background: #1b1b1b;
-  border: 1px solid #333;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
-}
-
-.benefits {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-
-.benefits li {
-  margin: 0.5rem 0;
-}
-
-.subscribe-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: #00ffe5;
-  color: #000;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
+input[type="text"] {
+  padding: 8px;
+  width: 80%;
   margin-top: 1rem;
-  transition: background 0.3s;
-}
-
-.subscribe-btn:hover {
-  background-color: #00cfc0;
+  border-radius: 8px;
+  border: none;
 }
