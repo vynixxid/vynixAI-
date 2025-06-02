@@ -1,139 +1,43 @@
-<!DOCTYPE html><html lang="id"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VYNIX - Beranda</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }body {
-  background-color: #000;
-  color: #fff;
-}
+/* === GLOBAL RESET === */
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #111;
-  border-bottom: 1px solid #222;
-}
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff; }
 
-header h1 {
-  font-size: 1.5rem;
-  color: #00ffff;
-}
 
-nav a {
-  color: #ccc;
-  margin-left: 1rem;
-  text-decoration: none;
-}
+body { background-color: #0a0a0a; line-height: 1.6; }
 
-nav a:hover {
-  color: #00ffff;
-}
+/* === NAVBAR === */ nav { background-color: #111; padding: 10px 20px; display: flex; justify-content: center; gap: 20px; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 1000; }
 
-.hero {
-  padding: 2rem;
-  text-align: center;
-  background: linear-gradient(to right, #0f0f0f, #111111);
-}
+nav a { text-decoration: none; color: #00ffff; font-weight: bold; transition: color 0.3s; }
 
-.hero h2 {
-  font-size: 2rem;
-  color: #00ffff;
-  margin-bottom: 1rem;
-}
+nav a:hover { color: #ff00ff; }
 
-.scroll-section {
-  padding: 1rem 1rem 0 1rem;
-}
+/* === SECTION === */ section { padding: 20px; max-width: 1200px; margin: auto; }
 
-.scroll-section h3 {
-  font-size: 1.2rem;
-  color: #00ffff;
-  margin-bottom: 0.5rem;
-}
+h2 { color: #00ffff; margin-bottom: 10px; }
 
-.film-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
+/* === TRENDING === */ .trending { background-color: #111; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px #000; }
 
-.film {
-  flex: 0 0 auto;
-  width: 120px;
-  background-color: #111;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 8px #00ffff20;
-  transition: transform 0.3s;
-}
+.trending img { width: 100%; border-radius: 8px; }
 
-.film:hover {
-  transform: scale(1.05);
-}
+/* === GENRE SCROLL === */ .genre-scroll { display: flex; overflow-x: auto; gap: 15px; padding: 10px 0; }
 
-.film img {
-  width: 100%;
-  display: block;
-}
+.genre-scroll::-webkit-scrollbar { display: none; }
 
-.film-title {
-  padding: 0.5rem;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #ccc;
-}
+.genre-card { min-width: 120px; background-color: #222; padding: 10px; border-radius: 8px; text-align: center; flex-shrink: 0; cursor: pointer; transition: background 0.3s; }
 
-footer {
-  background-color: #111;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid #222;
-  font-size: 0.8rem;
-  color: #999;
-}
+.genre-card:hover { background-color: #333; }
 
-  </style>
-</head><body>
-  <header>
-    <h1>VYNIX</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Favorit</a>
-      <a href="#">Notifikasi</a>
-      <a href="#">Nonton</a>
-      <a href="#">Profil</a>
-    </nav>
-  </header>  <section class="hero">
-    <h2>Film AI Trending Hari Ini</h2>
-    <img src="https://via.placeholder.com/300x150" alt="Film Utama" style="border-radius: 10px; box-shadow: 0 0 15px #00ffff40;">
-  </section>  <section class="scroll-section">
-    <h3>Genre Populer</h3>
-    <div class="film-container">
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Aksi</div></div>
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Drama</div></div>
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Fiksi Ilmiah</div></div>
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Animasi</div></div>
-    </div>
-  </section>  <section class="scroll-section">
-    <h3>Direkomendasikan untuk Anda</h3>
-    <div class="film-container">
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 1</div></div>
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 2</div></div>
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 3</div></div>
-      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 4</div></div>
-    </div>
-  </section>  <footer>
-    Donasi | Tentang VYNIX | Download | Langganan<br>
-    &copy; 2025 VYNIX. Semua Hak Dilindungi.
-  </footer>
-</body></html>
+/* === FILM GRID === */ .film-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
+
+.film-card { background-color: #111; padding: 10px; border-radius: 8px; box-shadow: 0 0 5px #000; transition: transform 0.3s; }
+
+.film-card:hover { transform: scale(1.05); }
+
+.film-card img { width: 100%; border-radius: 6px; }
+
+/* === FOOTER === */ footer { background-color: #111; padding: 15px; display: flex; justify-content: space-around; border-top: 1px solid #222; margin-top: 40px; }
+
+footer a { color: #00ffff; text-decoration: none; font-size: 14px; }
+
+footer a:hover { text-decoration: underline; }
+
