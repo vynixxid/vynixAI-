@@ -87,4 +87,51 @@ main {
 }
 
 /* LAINNYA */
-.film-list
+.film-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.film-thumbnail {
+  width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  border-top: 1px solid #333;
+  padding: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-menu a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #00ffe5;
+}
+
+.search-box {
+  text-align: center;
+}
+
+.search-box input {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  }
