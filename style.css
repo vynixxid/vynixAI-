@@ -1,73 +1,71 @@
-
 body {
-  background-color: #0e0e0e;
-  color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #111;
-  padding: 1rem;
-  flex-wrap: wrap;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #000;
 }
-
-.navbar h1 {
-  color: #ffffff;
-  margin: 0;
+nav a {
+    margin: 0 10px;
+    color: #00f2ff;
+    text-decoration: none;
 }
-
-.navbar nav a {
-  color: #00ffff;
-  text-decoration: none;
-  margin-left: 1rem;
+.hero {
+    position: relative;
+    height: 400px;
+    background: url('hero-image.jpg') no-repeat center/cover;
 }
-
-.navbar nav a:hover {
-  text-decoration: underline;
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
-.genre-scroll {
-  display: flex;
-  overflow-x: auto;
-  padding: 1rem;
-  gap: 10px;
+.watch-now {
+    background: #ff0000;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
 }
-
-.genre-scroll button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  white-space: nowrap;
+.genres, .movie-grid {
+    padding: 20px;
 }
-
+.genre-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.genre-buttons button {
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: #fff;
+}
+.movie-grid .movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+.movie-card {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
 footer {
-  margin-top: 3rem;
-  padding: 1rem;
-  background-color: #111;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background: #000;
 }
-
-.footer-links a {
-  color: #00ffff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-input[type="text"] {
-  padding: 8px;
-  width: 80%;
-  margin-top: 1rem;
-  border-radius: 8px;
-  border: none;
+footer a {
+    color: #00f2ff;
+    text-decoration: none;
 }
