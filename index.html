@@ -1,65 +1,139 @@
-<!-- 1. index.html --><!DOCTYPE html><html lang="id">
-<head>
+<!DOCTYPE html><html lang="id"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VYNIX - Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <title>VYNIX - Beranda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #111;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #00ffff;
+}
+
+nav a {
+  color: #ccc;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #0f0f0f, #111111);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.scroll-section {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.scroll-section h3 {
+  font-size: 1.2rem;
+  color: #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+.film-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.film {
+  flex: 0 0 auto;
+  width: 120px;
+  background-color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #00ffff20;
+  transition: transform 0.3s;
+}
+
+.film:hover {
+  transform: scale(1.05);
+}
+
+.film img {
+  width: 100%;
+  display: block;
+}
+
+.film-title {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ccc;
+}
+
+footer {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #222;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+  </style>
+</head><body>
   <header>
-    <div class="header-top">
-      <h1>VYNIX</h1>
-      <input type="text" class="search-box" placeholder="Cari film...">
-    </div>
-    <nav class="nav-menu">
-      <a href="index.html">Home</a>
-      <a href="favorit.html">Favorit</a>
-      <a href="notifikasi.html">Notifikasi</a>
-      <a href="nonton.html">Nonton</a>
-      <a href="profil.html">Profil</a>
-      <a href="pengaturan.html">Pengaturan</a>
-      <a href="donasi.html">Donasi</a>
+    <h1>VYNIX</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Favorit</a>
+      <a href="#">Notifikasi</a>
+      <a href="#">Nonton</a>
+      <a href="#">Profil</a>
     </nav>
-  </header>  <main>
-    <section class="hero">
-      <h2>Trending Film AI Minggu Ini</h2>
-      <div class="trending">
-        <img src="poster1.jpg" alt="Trending Film" class="trending-img">
-      </div>
-    </section><section class="genre">
-  <h3>Genre</h3>
-  <div class="genre-scroll">
-    <a href="genre.html">Aksi</a>
-    <a href="genre.html">Drama</a>
-    <a href="genre.html">Fantasi</a>
-    <a href="genre.html">Horor</a>
-    <a href="genre.html">Sci-Fi</a>
-    <a href="genre.html">Romantis</a>
-    <a href="genre.html">Komedi</a>
-  </div>
-</section>
-
-<section class="lainnya">
-  <h3>Rekomendasi Lainnya</h3>
-  <div class="film-list">
-    <div class="film-card"><img src="film1.jpg" alt="Film 1"><p>Film 1</p></div>
-    <div class="film-card"><img src="film2.jpg" alt="Film 2"><p>Film 2</p></div>
-    <div class="film-card"><img src="film3.jpg" alt="Film 3"><p>Film 3</p></div>
-    <div class="film-card"><img src="film4.jpg" alt="Film 4"><p>Film 4</p></div>
-    <div class="film-card"><img src="film5.jpg" alt="Film 5"><p>Film 5</p></div>
-    <div class="film-card"><img src="film6.jpg" alt="Film 6"><p>Film 6</p></div>
-    <div class="film-card"><img src="film7.jpg" alt="Film 7"><p>Film 7</p></div>
-  </div>
-</section>
-
-  </main>  <footer>
-    <div class="footer-menu">
-      <a href="donasi.html" class="btn-footer">Donasi</a>
-      <a href="tentang.html" class="btn-footer">Tentang VYNIX</a>
-      <a href="download.html" class="btn-footer">Download</a>
-      <a href="langganan.html" class="btn-footer">Langganan</a>
+  </header>  <section class="hero">
+    <h2>Film AI Trending Hari Ini</h2>
+    <img src="https://via.placeholder.com/300x150" alt="Film Utama" style="border-radius: 10px; box-shadow: 0 0 15px #00ffff40;">
+  </section>  <section class="scroll-section">
+    <h3>Genre Populer</h3>
+    <div class="film-container">
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Aksi</div></div>
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Drama</div></div>
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Fiksi Ilmiah</div></div>
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Animasi</div></div>
     </div>
+  </section>  <section class="scroll-section">
+    <h3>Direkomendasikan untuk Anda</h3>
+    <div class="film-container">
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 1</div></div>
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 2</div></div>
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 3</div></div>
+      <div class="film"><img src="https://via.placeholder.com/120x180" alt="Film"><div class="film-title">Film 4</div></div>
+    </div>
+  </section>  <footer>
+    Donasi | Tentang VYNIX | Download | Langganan<br>
+    &copy; 2025 VYNIX. Semua Hak Dilindungi.
   </footer>
-  <script src="main.js"></script>
-</body>
-</html>
+</body></html>
