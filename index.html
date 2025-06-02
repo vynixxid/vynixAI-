@@ -1,17 +1,16 @@
-<!-- 1. index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VYNIX - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>VYNIX</h1>
+    <div class="logo">VYNIX</div>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="favorit.html">Favorit</a>
       <a href="notifikasi.html">Notifikasi</a>
       <a href="nonton.html">Nonton</a>
@@ -25,7 +24,7 @@
     <section class="hero">
       <h2>Trending Film AI Minggu Ini</h2>
       <div class="trending">
-        <!-- Gambar/poster film besar -->
+        <img src="poster1.jpg" alt="Film Trending" class="poster-big" />
       </div>
     </section>
 
@@ -36,13 +35,18 @@
         <a href="genre.html">Drama</a>
         <a href="genre.html">Fantasi</a>
         <a href="genre.html">Horor</a>
-        <!-- Tambah genre lain -->
+        <a href="genre.html">Romantis</a>
+        <a href="genre.html">Sci-Fi</a>
       </div>
     </section>
 
     <section class="lainnya">
       <h3>Rekomendasi Lainnya</h3>
-      <!-- Film kecil di bawah -->
+      <div class="film-list">
+        <img src="film1.jpg" alt="Film 1" class="film-thumbnail"/>
+        <img src="film2.jpg" alt="Film 2" class="film-thumbnail"/>
+        <img src="film3.jpg" alt="Film 3" class="film-thumbnail"/>
+      </div>
     </section>
   </main>
 
@@ -54,10 +58,8 @@
       <a href="langganan.html">Langganan</a>
     </div>
     <div class="search-box">
-      <input type="text" placeholder="Cari film...">
+      <input type="text" placeholder="Cari film..." />
     </div>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
