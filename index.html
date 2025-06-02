@@ -1,63 +1,56 @@
-<!-- 1. index.html -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VYNIX - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>VYNIX</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="favorit.html">Favorit</a>
-      <a href="notifikasi.html">Notifikasi</a>
-      <a href="nonton.html">Nonton</a>
-      <a href="profil.html">Profil</a>
-      <a href="pengaturan.html">Pengaturan</a>
-      <a href="donasi.html">Donasi</a>
-    </nav>
+    <div class="navbar">
+      <h1>VYNIX</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="favorit.html">Favorit</a>
+        <a href="notifikasi.html">Notifikasi</a>
+        <a href="nonton.html">Nonton</a>
+        <a href="profil.html">Profil</a>
+        <a href="pengaturan.html">Pengaturan</a>
+        <a href="donasi.html">Donasi</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero">
       <h2>Trending Film AI Minggu Ini</h2>
-      <div class="trending">
-        <!-- Gambar/poster film besar -->
-      </div>
     </section>
 
     <section class="genre">
       <h3>Genre</h3>
       <div class="genre-scroll">
-        <a href="genre.html">Aksi</a>
-        <a href="genre.html">Drama</a>
-        <a href="genre.html">Fantasi</a>
-        <a href="genre.html">Horor</a>
-        <!-- Tambah genre lain -->
+        <button>Aksi</button>
+        <button>Drama</button>
+        <button>Fantasi</button>
+        <button>Horor</button>
       </div>
     </section>
 
-    <section class="lainnya">
+    <section class="rekomendasi">
       <h3>Rekomendasi Lainnya</h3>
-      <!-- Film kecil di bawah -->
+      <!-- Tambahkan film di sini -->
     </section>
   </main>
 
   <footer>
-    <div class="footer-menu">
+    <div class="footer-links">
       <a href="donasi.html">Donasi</a>
       <a href="tentang.html">Tentang VYNIX</a>
       <a href="download.html">Download</a>
       <a href="langganan.html">Langganan</a>
     </div>
-    <div class="search-box">
-      <input type="text" placeholder="Cari film...">
-    </div>
+    <input type="text" placeholder="Cari film..." />
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
