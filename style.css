@@ -1,48 +1,43 @@
-/* style.css */
+/* === GLOBAL RESET === */
 
-body { margin: 0; padding: 0; background-color: #0f0f0f; color: #fff; font-family: 'Segoe UI', sans-serif; }
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff; }
 
-header { background-color: #111; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; flex-wrap: wrap; }
 
-h1 { color: #00ffe5; font-size: 1.8rem; }
+body { background-color: #0a0a0a; line-height: 1.6; }
 
-.nav-menu { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; }
+/* === NAVBAR === */ nav { background-color: #111; padding: 10px 20px; display: flex; justify-content: center; gap: 20px; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 1000; }
 
-.nav-menu a { color: #ccc; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 5px; transition: background 0.3s, color 0.3s; }
+nav a { text-decoration: none; color: #00ffff; font-weight: bold; transition: color 0.3s; }
 
-.nav-menu a:hover, .nav-menu a.active { background-color: #00ffe5; color: #000; }
+nav a:hover { color: #ff00ff; }
 
-main { padding: 2rem; }
+/* === SECTION === */ section { padding: 20px; max-width: 1200px; margin: auto; }
 
-.hero h2, .genre h3, .lainnya h3 { font-size: 1.5rem; color: #00ffe5; margin-bottom: 1rem; }
+h2 { color: #00ffff; margin-bottom: 10px; }
 
-.trending { background-color: #1a1a1a; height: 200px; border-radius: 12px; margin-bottom: 2rem; }
+/* === TRENDING === */ .trending { background-color: #111; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px #000; }
 
-.genre-scroll { display: flex; overflow-x: auto; gap: 1rem; padding-bottom: 1rem; }
+.trending img { width: 100%; border-radius: 8px; }
 
-.genre-scroll a { background-color: #222; padding: 0.5rem 1rem; color: #fff; border-radius: 20px; white-space: nowrap; text-decoration: none; transition: background 0.3s; }
+/* === GENRE SCROLL === */ .genre-scroll { display: flex; overflow-x: auto; gap: 15px; padding: 10px 0; }
 
-.genre-scroll a:hover { background-color: #00ffe5; color: #000; }
+.genre-scroll::-webkit-scrollbar { display: none; }
 
-.lainnya { display: flex; overflow-x: auto; gap: 1rem; padding-top: 1rem; }
+.genre-card { min-width: 120px; background-color: #222; padding: 10px; border-radius: 8px; text-align: center; flex-shrink: 0; cursor: pointer; transition: background 0.3s; }
 
-.lainnya .film { min-width: 140px; background: #1b1b1b; border-radius: 10px; overflow: hidden; }
+.genre-card:hover { background-color: #333; }
 
-.lainnya .film img { width: 100%; display: block; border-bottom: 1px solid #333; }
+/* === FILM GRID === */ .film-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
 
-.lainnya .film-title { padding: 0.5rem; font-size: 0.9rem; text-align: center; }
+.film-card { background-color: #111; padding: 10px; border-radius: 8px; box-shadow: 0 0 5px #000; transition: transform 0.3s; }
 
-footer { background-color: #111; padding: 2rem 1rem; border-top: 1px solid #333; }
+.film-card:hover { transform: scale(1.05); }
 
-.footer-menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2rem; margin-bottom: 1rem; }
+.film-card img { width: 100%; border-radius: 6px; }
 
-.footer-menu a { color: #aaa; text-decoration: none; transition: color 0.3s; }
+/* === FOOTER === */ footer { background-color: #111; padding: 15px; display: flex; justify-content: space-around; border-top: 1px solid #222; margin-top: 40px; }
 
-.footer-menu a:hover { color: #00ffe5; }
+footer a { color: #00ffff; text-decoration: none; font-size: 14px; }
 
-.search-box { text-align: center; }
-
-.search-box input { width: 80%; max-width: 500px; padding: 0.7rem; border-radius: 8px; border: none; background-color: #1a1a1a; color: #fff; outline: none; margin-bottom: 1rem; }
-
-/* Responsif dasar */ @media (max-width: 768px) { .nav-menu { flex-direction: column; align-items: flex-start; } .lainnya { overflow-x: scroll; } }
+footer a:hover { text-decoration: underline; }
 
