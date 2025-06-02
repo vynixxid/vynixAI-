@@ -1,43 +1,63 @@
-/* === GLOBAL RESET === */
+<!-- 1. index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VYNIX - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>VYNIX</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="favorit.html">Favorit</a>
+      <a href="notifikasi.html">Notifikasi</a>
+      <a href="nonton.html">Nonton</a>
+      <a href="profil.html">Profil</a>
+      <a href="pengaturan.html">Pengaturan</a>
+      <a href="donasi.html">Donasi</a>
+    </nav>
+  </header>
 
-{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff; }
+  <main>
+    <section class="hero">
+      <h2>Trending Film AI Minggu Ini</h2>
+      <div class="trending">
+        <!-- Gambar/poster film besar -->
+      </div>
+    </section>
 
+    <section class="genre">
+      <h3>Genre</h3>
+      <div class="genre-scroll">
+        <a href="genre.html">Aksi</a>
+        <a href="genre.html">Drama</a>
+        <a href="genre.html">Fantasi</a>
+        <a href="genre.html">Horor</a>
+        <!-- Tambah genre lain -->
+      </div>
+    </section>
 
-body { background-color: #0a0a0a; line-height: 1.6; }
+    <section class="lainnya">
+      <h3>Rekomendasi Lainnya</h3>
+      <!-- Film kecil di bawah -->
+    </section>
+  </main>
 
-/* === NAVBAR === */ nav { background-color: #111; padding: 10px 20px; display: flex; justify-content: center; gap: 20px; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 1000; }
+  <footer>
+    <div class="footer-menu">
+      <a href="donasi.html">Donasi</a>
+      <a href="tentang.html">Tentang VYNIX</a>
+      <a href="download.html">Download</a>
+      <a href="langganan.html">Langganan</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Cari film...">
+    </div>
+  </footer>
 
-nav a { text-decoration: none; color: #00ffff; font-weight: bold; transition: color 0.3s; }
-
-nav a:hover { color: #ff00ff; }
-
-/* === SECTION === */ section { padding: 20px; max-width: 1200px; margin: auto; }
-
-h2 { color: #00ffff; margin-bottom: 10px; }
-
-/* === TRENDING === */ .trending { background-color: #111; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px #000; }
-
-.trending img { width: 100%; border-radius: 8px; }
-
-/* === GENRE SCROLL === */ .genre-scroll { display: flex; overflow-x: auto; gap: 15px; padding: 10px 0; }
-
-.genre-scroll::-webkit-scrollbar { display: none; }
-
-.genre-card { min-width: 120px; background-color: #222; padding: 10px; border-radius: 8px; text-align: center; flex-shrink: 0; cursor: pointer; transition: background 0.3s; }
-
-.genre-card:hover { background-color: #333; }
-
-/* === FILM GRID === */ .film-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; }
-
-.film-card { background-color: #111; padding: 10px; border-radius: 8px; box-shadow: 0 0 5px #000; transition: transform 0.3s; }
-
-.film-card:hover { transform: scale(1.05); }
-
-.film-card img { width: 100%; border-radius: 6px; }
-
-/* === FOOTER === */ footer { background-color: #111; padding: 15px; display: flex; justify-content: space-around; border-top: 1px solid #222; margin-top: 40px; }
-
-footer a { color: #00ffff; text-decoration: none; font-size: 14px; }
-
-footer a:hover { text-decoration: underline; }
-
+  <script src="main.js"></script>
+</body>
+</html>
